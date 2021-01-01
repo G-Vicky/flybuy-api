@@ -13,7 +13,7 @@ const productRoutes = require('./api/routes/products');
 // db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 //cloud mongodb atlas connection
-mongoose.connect("mongodb+srv://flybuy:flybuy@cluster0.ij1tg.mongodb.net/flybuy?retryWrites=true&w=majority",
+mongoose.connect("mongodb+srv://flybuy:<password>@cluster0.ij1tg.mongodb.net/flybuy?retryWrites=true&w=majority",
 { useNewUrlParser: true, useUnifiedTopology: true  }
 );
 var db = mongoose.connection;
