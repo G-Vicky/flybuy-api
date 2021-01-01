@@ -53,7 +53,7 @@ router.post('/', (req, res) => {
         productDescription: req.body.productDescription,
         category: req.body.category,
         Brand: req.body.brand,
-        inventoryCount: req.body.inventoryCount,
+        inventoryQuantity: req.body.inventoryCount,
         dateCreated: new Date()
     });
 

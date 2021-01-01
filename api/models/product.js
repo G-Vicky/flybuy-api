@@ -7,7 +7,7 @@ const productSchema = mongoose.Schema({
     productDescription: String,
     category: [{type: String}],
     Brand: String,
-    inventoryCount: Number,
+    inventoryQuantity: Number,
     dateCreated: Number
 });
 
