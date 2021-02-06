@@ -6,6 +6,8 @@ const mongoose = require("mongoose");
 
 const productRoutes = require("./api/routes/products");
 const supplierRoutes = require("./api/routes/suppliers");
+const customerRoutes = require("./api/routes/cusotmer_route");
+const transactionRoutes = require("./api/routes/transaction_route");
 
 //local mongodb connection
 var mongoDB = "mongodb://localhost/test";
@@ -40,6 +42,8 @@ app.use((req, res, next) => {
 
 app.use("/products", productRoutes);
 app.use("/suppliers", supplierRoutes);
+app.use("/customers", customerRoutes);
+app.use("/transactions", transactionRoutes);
 
 app.use((req, res, next) => {
   console.log(next);
